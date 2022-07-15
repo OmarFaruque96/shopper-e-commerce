@@ -1,0 +1,229 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+body{
+	font-family: 'Mukta', sans-serif;
+}
+.container{
+	width: 1140px;
+	margin: 0 auto;
+}
+
+/*********************
+ * header section css
+ *********************/
+header{
+	width: 100%;
+}
+.topbar{
+	width: 100%;
+	background-color: white;
+	padding: 40px 0;
+	border-bottom: 1px solid #e5e7edad;
+}
+.topbar-content{
+	display: flex;
+	justify-content: space-between;
+}
+.logo a{
+	text-transform: uppercase;
+	color: #25262a;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 2px;
+    border: 2px solid black;
+    padding: 4px 14px;
+}
+.topbar-icon a{
+	color: #868995;
+	margin-left: 8px;
+}
+.topbar-icon a:hover{
+	color: #25262a;
+}
+.topbar-search input{
+	font-size: 16px;
+    padding: 12px;
+    border: none;
+}
+.topbar-search input:focus{
+	outline: none;
+	padding-left: 0;
+}
+.topbar-search i{
+	color: #868995;
+}
+.main-menu{
+	text-align: center;
+	padding: 16px 0;
+}
+.main-menu li{
+	display: inline-block;
+	padding: 0 12px;
+}
+.main-menu li a{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+
+/*********************
+ * banner section css
+ *********************/
+.banner{
+	width: 100%;
+	background-image: url(../img/banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+	padding: 150px 0px;
+}
+
+.banner-content{
+	display: flex;
+}
+.left{
+	flex-basis: 60%;
+}
+.right{
+	flex-basis: 40%;
+}
+.right h1{
+	font-size: 50px;
+	color: black;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+
+.right p{
+	font-weight: 300;
+	color: #333333;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+.right button{
+	background-color: #7971ea;
+	padding: 14px 24px;
+	color: white;
+	border: none;
+	border-color: #7971ea;
+	letter-spacing: 1px;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 300;
+	transition: 0.5s;
+}
+
+.right button:hover{
+	box-shadow: 0 5px 20px -7px rgb(0 0 0 / 90%) !important;
+    transform: translateY(-4px);
+    background-color: #5a50e5;
+    transition: 0.5s;
+}
+
+/*********************
+ * about section css
+ *********************/
+.about{
+	width: 100%;
+	padding: 60px 0;
+	border-bottom: 1px solid #e5e7edad;
+}
+.about-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	column-gap: 20px;
+}
+.item{
+	display: flow-root;
+}
+.icon i{
+	font-size: 42px;
+}
+.icon{
+	float: left;
+	width: 20%;
+}
+.content{
+	float: left;
+	width: 80%;
+}
+
+/*********************
+ * category section css
+ *********************/
+
+.category{
+	width: 100%;
+	padding: 100px 0;
+}
+.category-content{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	column-gap: 32px;
+}
+.img-fluid{
+	max-width: 100%;
+	height: auto;
+}
+.c-item{
+	position: relative;
+	overflow: hidden;
+}
+.c-item img{
+	z-index: -1;
+	transition: 0.5s;
+}
+.overlay{
+	z-index: 999;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.c-item-content{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	color: white;
+	z-index: 9999;
+}
+
+.c-item:hover img{
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+
+
+.product{
+	width: 100%;
+	padding: 100px 0;
+}
+.section-title{
+	text-align: center;
+}
+
+.line{
+	width: 50px;
+	height: 2px;
+	background-color: blue;
+	margin: 32px auto;
+}
+.owl-dots{
+	display: none;
+}
